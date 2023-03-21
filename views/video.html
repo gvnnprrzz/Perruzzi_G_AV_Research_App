@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Audio and Video Accessibility Research Project">
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <title>Audio and Video Accessibility Research Project - Video</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Audio and Video Accessibility Research Project">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Audio and Video Accessibility Research Project - Video</title>
+</head>
 
-    <body>
-        <h1 class="visually-hidden">Audio and Video Accessibility Research Project - Video</h1>
-        <a href="#main-content" class="skip-link" tabindex="0" title="Skip to main content">Skip to main content</a>
-        <header class="header" role="banner">
-            <div class="logo-nav">
-                <a href="/index.html">
-                    <img src="/images/logo.svg" alt="Logo" title="Audio and Video Accessibility Research Project">
-                </a>
-                <nav class="main-navigation" aria-label="Main navigation menu" role="navigation">
-                    <h2 class="visually-hidden">Main navigation</h2>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/audio.html">Audio</a></li>
-                        <li><a href="/video.html" aria-current="page">Video</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<body>
+    <h1 class="visually-hidden">Audio and Video Accessibility Research Project - Video</h1>
+    <a href="#main-content" class="skip-link" tabindex="0" title="Skip to main content">Skip to main content</a>
+    <header class="header" role="banner">
+        <div class="logo-nav">
+            <a href="/">
+                <img src="/images/logo.svg" alt="Logo" title="Audio and Video Accessibility Research Project">
+            </a>
+            <nav class="main-navigation" aria-label="Main navigation menu" role="navigation">
+                <h2 class="visually-hidden">Main navigation</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/audio.html">Audio</a></li>
+                    <li><a href="/video.html" aria-current="page">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <main class="main" id="main-content" role="main">
-            <section class="video-section" role="region" aria-label="Video 1">
-                <h2 class="video-heading">Video 1</h2>
-                <video src="/video/video1.mp4" controls aria-label="Video 1 Player" tabindex="0"></video>
-                <track kind="captions" label="English captions" src="/videos/sample1-en.vtt" default>
-                <track kind="description" label="Transcript" src="/videos/sample2-transcript.vtt">
-                <track kind="description" label="Audio Description" src="/videos/sample2-audio-description.mp3">
-            </section>
+    <main class="main" id="main-content" role="main">
+        <section class="video-section" role="region" aria-label="Video 1">
+            <h2 class="video-heading">Video 1</h2>
+            <video src="/video/video1.mp4" controls aria-label="Video 1 Player" tabindex="0">
+            <track kind="captions" label="English captions" src="/video/video1-captions.vtt" default>
+            <track kind="description" label="Transcript" src="/video/video1-transcript.vtt">
+            <track kind="description" label="Audio Description" src="/video/sample1-audio-description.mp3">
+            </video>
+        </section>
 
-            <section class="video-section" role="region" aria-label="Video 2">
-                <h2 class="video-heading">Video 2</h2>
-                <video src="/video/video2.mp4" controls aria-label="Video 2 Player" tabindex="0"></video>
-                <track kind="captions" label="English captions" src="/videos/sample2-en.vtt" default>
-                <track kind="description" label="Transcript" src="/videos/sample2-transcript.vtt">
-                <track kind="description" label="Audio Description" src="/videos/sample2-audio-description.mp3">
-            </section>
-        </main>
+        <section class="video-section" role="region" aria-label="Video 2">
+            <h2 class="video-heading">Video 2</h2>
+            <video src="/video/video2.mp4" controls aria-label="Video 2 Player" tabindex="0">
+            <track kind="captions" label="English captions" src="/video/video2-captions.vtt" default>
+            <track kind="description" label="Transcript" src="/video/video2-transcript.vtt">
+            <track kind="description" label="Audio Description" src="/video/sample2-audio-description.mp3">
+            </video>
+        </section>
+    </main>
 
-        <footer class="footer" role="contentinfo">
-            <h2 class="visually-hidden">Footer</h2>
-            <p><span lang="en">&copy;</span> 2023 Audio/Video Accessibility Research Project</p>
-        </footer>
+    <footer class="footer" role="contentinfo">
+        <h2 class="visually-hidden">Footer</h2>
+        <p><span lang="en">&copy;</span> 2023 Audio/Video Accessibility Research Project</p>
+    </footer>
 
-        <noscript>
-            <p>Please enable JavaScript to access this site's features.</p>
-        </noscript>
+    <noscript>
+        <p>Please enable JavaScript to access this site's features.</p>
+    </noscript>
 
-        <script src="/js/main.js" type="module" defer></script>
-    </body>
+    <script src="/js/main.js" type="module" defer></script>
+</body>
 
 </html>
