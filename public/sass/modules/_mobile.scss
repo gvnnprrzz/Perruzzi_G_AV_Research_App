@@ -1,0 +1,242 @@
+/* Homepage Starts */
+
+@media screen and (min-width: 428px) {
+
+    /* Header Starts */
+
+    .header {
+        background-color: #fff;
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .logo-nav img {
+        max-width: 100%;
+    }
+
+    .main-navigation li {
+        margin-left: 1rem;
+    }
+
+    .main-navigation a {
+        font-weight: bold;
+    }
+
+    /* Header Ends */
+
+    /* Main Starts */
+
+    .hero-section {
+        padding: 1rem;
+        text-align: center;
+        background-color: #0077c0;
+        color: #fff;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+        margin-bottom: 1rem;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #fff;
+        color: #0077c0;
+        border-radius: 0.25rem;
+    }
+
+    .services-section {
+        padding: 1rem;
+        background-color: #fff;
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .services-section img {
+        max-width: 100%;
+    }
+
+    .service-1 h3,
+    .service-2 h3,
+    .service-3 h3 {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .service-1 p,
+    .service-2 p,
+    .service-3 p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .service-link {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #0077c0;
+        color: #fff;
+        border-radius: 0.25rem;
+    }
+
+    /* Main Ends */
+
+    /* Footer Starts */
+
+    .footer {
+        background-color: #0077c0;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer p {
+        margin-bottom: 0;
+    }
+
+    /* Footer Ends */
+
+    /* Homepage Ends */
+
+    /* Audio Page Starts */
+
+    /* Main Starts */
+
+    .audio-container p {
+        margin-bottom: 1rem;
+    }
+
+    audio {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    audio:focus {
+        box-shadow: 0 0 0 2px blue;
+    }
+
+    audio::-webkit-media-controls-start-playback-button {
+        display: none;
+    }
+
+    track[kind=captions] {
+        font-size: 14px;
+        color: gray;
+    }
+
+    track[kind=description] {
+        font-size: 14px;
+        color: gray;
+        display: none;
+    }
+
+    button.transcript:focus + track[kind=description][label=Transcript] {
+        display: block;
+    }
+
+    button.audio-description:focus + track[kind=description][label="Audio Description"] {
+        display: block;
+    }
+
+    audio::-webkit-media-controls-timeline-contents {
+        background-color: #ccc;
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display {
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    audio::-webkit-media-controls-play-button {
+        background-color: #444;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23fff" d="M3.049 21.012a.75.75 0 0 1-.75-.75V3.738c0-.378.287-.687.65-.733l16.5-1.5c.288-.026.55.166.576.454l.816 9.033c.026.288-.166.55-.454.576l-15.684 1.427v14.066c0 .413-.337.75-.75.75z"/></svg>');
+        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23fff" d="M3.049 21.012a.75.75 0 0 1-.75-.75V3.738c0-.378.287-.687.65-.733l16.5-1.5c.288-.026.55.166.576.454l.816 9.033c.026.288-.166.55-.454.576l-15.684 1.427v14.066c0 .413-.337.75-.75.75z"/></svg>');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+    }
+
+    audio::-webkit-media-controls-volume-slider {
+        margin-right: 10px;
+    }
+
+    audio::-webkit-media-controls-mute-button {
+        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23 fff" d=" M6 8H4v8h2l4 4V4L6 8z"/><path d=" M0 0h24v24H0z" fill=" none"/></svg>');
+        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23fff" d="M6 8H4v8h2l4 4V4L6 8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+    }
+
+    audio::-webkit-media-controls-timeline {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    audio::-webkit-media-controls-timeline-container:focus-within audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-timeline-container:focus-within audio::-webkit-media-controls-mute-button {
+        outline: none;
+    }
+
+    /* Main Ends */
+
+    /* Audio Page Ends */
+
+    /* Video Page Starts */
+
+    /* Main Starts */
+
+    .video-section {
+        margin: 20px 0;
+        position: relative;
+    }
+
+    .video-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .video-captions,
+    .video-description {
+        margin-top: 10px;
+    }
+
+    .video-captions track,
+    .video-description track {
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Main Ends */
+
+    /* Video Page Ends */
+}
