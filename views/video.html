@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Audio and Video Accessibility Research Project">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
-        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="icon" type="image/png" href="/images/logo.svg">
         <title>Audio and Video Accessibility Research Project - Video</title>
     </head>
 
@@ -33,18 +33,22 @@
         <main class="main" id="main-content" role="main">
             <section class="video-section" role="region" aria-label="Video 1">
                 <h2 class="video-heading">Video 1</h2>
-                <video src="/video/video1.mp4" controls aria-label="Video 1 Player" tabindex="0"></video>
-                <track kind="captions" label="English captions" src="/videos/sample1-en.vtt" default>
-                <track kind="description" label="Transcript" src="/videos/sample2-transcript.vtt">
-                <track kind="description" label="Audio Description" src="/videos/sample2-audio-description.mp3">
+                <video src="/video/video1.mp4" controls aria-label="Video 1 Player" tabindex="0">
+                    <track kind="captions" label="English captions" src="/video/video1-captions.vtt" default>
+                    <track kind="description" label="Transcript" src="/video/video1-transcript.vtt">
+                    <track kind="description" label="Audio Description" src="/video/sample2-audio-description.mp3">
+                </video>
+                <a href="/video/video1-transcript.vtt" download>Download Transcript For Video 1</a>
             </section>
 
             <section class="video-section" role="region" aria-label="Video 2">
                 <h2 class="video-heading">Video 2</h2>
-                <video src="/video/video2.mp4" controls aria-label="Video 2 Player" tabindex="0"></video>
-                <track kind="captions" label="English captions" src="/videos/sample2-en.vtt" default>
-                <track kind="description" label="Transcript" src="/videos/sample2-transcript.vtt">
-                <track kind="description" label="Audio Description" src="/videos/sample2-audio-description.mp3">
+                <video src="/video/video2.mp4" controls aria-label="Video 2 Player" tabindex="0">
+                    <track kind="captions" label="English captions" src="/video/video2-captions.vtt" default>
+                    <track kind="description" label="Transcript" src="/video/video2-transcript.vtt">
+                    <track kind="description" label="Audio Description" src="/video/sample2-audio-description.mp3">
+                </video>
+                <a href="/video/video2-transcript.vtt" download>Download Transcript For Video 2</a>
             </section>
         </main>
 
