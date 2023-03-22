@@ -185,7 +185,8 @@
         grid-column: 2 / span 2;
     }
 
-    .audio-container audio {
+    .audio-container audio,
+    .audio-container a {
         grid-column: 2;
     }
 
@@ -204,7 +205,8 @@
         grid-column: 2 / span 1;
     }
 
-    .video-section video {
+    .video-section video,
+    .video-section a {
         grid-column: 2;
     }
 
