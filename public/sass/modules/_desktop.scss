@@ -1,17 +1,31 @@
 /* Homepage Starts */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
 
     /* Header Starts */
 
-    .logo-nav img {
-        height: 3rem;
+    .header {
+        background-color: #fff;
+        padding: 1rem;
+        border-bottom: 2px solid #ccc;
     }
 
-    .main-navigation a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        padding: 0.5rem;
+    .logo img {
+        max-width: 80%;
+    }
+
+    .main-navigation {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-links {
+        display: flex;
+    }
+
+    ul li {
+        padding: 15px;
+        text-transform: uppercase;
     }
 
     .main-navigation a:hover,
@@ -23,39 +37,75 @@
 
     /* Main Starts */
 
+    .hero-section {
+        padding: 2.5rem;
+        text-align: center;
+        background-color: #0077c0;
+        color: #fff;
+    }
+
     .hero-heading {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+        font-size: 2em;
+        margin-bottom: 1.5rem;
     }
 
     .hero-section p {
-        font-size: 1.2rem;
-        line-height: 1.5;
-        margin-bottom: 2rem;
+        font-size: 1.2em;
+        margin-bottom: 1.5rem;
     }
 
     .cta-button {
-        padding: 1rem 2rem;
+        background-color: #fff;
+        color: #0077c0;
+        padding: 1.5rem 3rem;
         font-size: 1.2rem;
-        text-decoration: none;
         border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
     }
 
     .cta-button:hover,
     .cta-button:focus {
-        background-color: #444;
+        background-color: #004F89;
+    }
+
+    .services-section {
+        padding: 2rem;
+        margin-top: 2rem;
+        background-color: #fff;
+    }
+
+    .services-section h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .service-1,
+    .service-2,
+    .service-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        text-align: center;
     }
 
     .service-1 img,
     .service-2 img,
     .service-3 img {
-        margin-bottom: 2rem;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
     }
 
     .service-1 h3,
     .service-2 h3,
     .service-3 h3 {
         font-size: 1.5rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
@@ -63,19 +113,20 @@
     .service-2 p,
     .service-3 p {
         font-size: 1.2rem;
-        line-height: 1.5;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .service-link {
-        padding: 1rem 2rem;
+        padding: 1.5rem 3rem;
         font-size: 1.2rem;
-        text-decoration: none;
+        background-color: #0077c0;
+        color: #fff;
+        border-radius: 0.5rem;
     }
 
     .service-link:hover,
     .service-link:focus {
-        background-color: #444;
+        background-color: #004F89;
     }
 
     /* Main Ends */
@@ -83,8 +134,10 @@
     /* Footer Starts */
 
     .footer {
-        padding: 2rem;
-        font-size: 1.2rem;
+        background-color: #0077c0;
+        color: #fff;
+        padding: 1.5rem;
+        text-align: center;
     }
 
     /* Footer Ends */
@@ -95,15 +148,94 @@
 
     /* Main Starts */
 
-    audio {
-        display: block;
-        border-radius: 5px;
-        padding: 10px;
+    .audio-container {
+        padding: 2rem;
     }
 
-    track[kind="captions"] {
+    .audio-container p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    audio {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        max-width: 100%;
+        height: 40px;
+    }
+
+    audio:focus {
+        box-shadow: 0 0 0 2px blue;
+    }
+
+    audio::-webkit-media-controls-start-playback-button {
+        display: none;
+    }
+
+    track[kind=captions] {
+        font-size: 1.2rem;
+        color: gray;
+    }
+
+    track[kind=description] {
+        font-size: 1.2rem;
+        color: gray;
+        display: none;
+    }
+
+    button.transcript:focus + track[kind=description][label=Transcript] {
         display: block;
-        margin-top: 10px;
+    }
+
+    button.audio-description:focus + track[kind=description][label="Audio Description"] {
+        display: block;
+    }
+
+    audio::-webkit-media-controls-timeline-contents {
+        background-color: #ccc;
+        height: 6px;
+        border-radius: 3px;
+    }
+
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display {
+        font-size: 1rem;
+    }
+
+    audio::-webkit-media-controls-play-button {
+        background-color: #444;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    audio::-webkit-media-controls-volume-slider {
+        margin-right: 15px;
+    }
+
+    audio::-webkit-media-controls-mute-button {
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+    }
+
+    audio::-webkit-media-controls-timeline {
+        margin-top: 15px;
+        height: 10px;
+        border-radius: 5px;
+    }
+
+    audio::-webkit-media-controls-timeline-container:focus-within audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-timeline-container:focus-within audio::-webkit-media-controls-mute-button {
+        outline: none;
+    }
+
+    audio label {
+        display: none;
     }
 
     /* Main Ends */
@@ -114,19 +246,37 @@
 
     /* Main Starts */
 
+    .video-section {
+        padding: 2rem;
+    }
+
     .video-heading {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 0 0 10px;
+        font-size: 1.5em;
+        margin: 20px 0;
     }
 
     video {
-        display: block;
-        width: 100%;
+        max-width: 100%;
         height: auto;
-        background-color: #000;
-        border-radius: 5px;
-        overflow: hidden;
+    }
+
+    .video-captions,
+    .video-description {
+        margin-top: 20px;
+    }
+
+    .video-captions track,
+    .video-description track {
+        display: block;
+        margin-top: 20px;
+    }
+
+    track {
+        display: none;
+    }
+
+    track[default] {
+        display: block;
     }
 
     /* Main Ends */

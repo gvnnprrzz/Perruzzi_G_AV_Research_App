@@ -19,7 +19,7 @@ This project aims to create and deploy a fully accessible Node/Express media app
 4. Navigate to the app directory (run cd <app-directory>).
 5. Use the npm package manager to install the app's dependencies (run npm install in the terminal).
 6. Run the app using the node command in the terminal (run node app.js or node index.js, depending on the name of the main file).
-7. Access the app in your web browser by navigating to the URL http://localhost:<port>, where <port> is the port number the app is listening on.
+7. Access the app in your web browser by navigating to the URL <http://localhost>:<port>, where <port> is the port number the app is listening on.
 
 ## Accessibility Features
 
