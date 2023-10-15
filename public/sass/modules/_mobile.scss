@@ -1,25 +1,68 @@
 /* Homepage Starts */
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
 
     /* Header Starts */
 
     .header {
         background-color: #fff;
-        padding: 1rem;
+        padding: 0.5rem;
         border-bottom: 1px solid #ccc;
     }
 
-    .logo-nav img {
+    .logo img {
         max-width: 100%;
     }
 
-    .main-navigation li {
-        margin-left: 1rem;
+    .main-navigation {
+        display: flex;
+        align-items: center;
     }
 
-    .main-navigation a {
-        font-weight: bold;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 22px;
+        height: 21px;
+    }
+
+    .line {
+        background-color: #000;
+        height: 2px;
+        margin: 3px 0;
+        transition: transform 0.3s ease;
+    }
+
+    .menu.open .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.open .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.open .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu.open ul {
+        display: block;
+    }
+
+    .menu-links {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        text-transform: uppercase;
     }
 
     /* Header Ends */
@@ -34,7 +77,7 @@
     }
 
     .hero-heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
@@ -43,7 +86,6 @@
     }
 
     .cta-button {
-        display: inline-block;
         padding: 0.5rem 1rem;
         background-color: #fff;
         color: #0077c0;
@@ -56,8 +98,22 @@
     }
 
     .services-section h2 {
-        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.25rem;
         margin-bottom: 1rem;
+    }
+
+    .service-1,
+    .service-2,
+    .service-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        padding: 2rem;
     }
 
     .services-section img {
@@ -70,6 +126,8 @@
         font-size: 1.25rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
+        text-align: center;
+
     }
 
     .service-1 p,
@@ -80,7 +138,6 @@
     }
 
     .service-link {
-        display: inline-block;
         padding: 0.5rem 1rem;
         background-color: #0077c0;
         color: #fff;
@@ -94,12 +151,8 @@
     .footer {
         background-color: #0077c0;
         color: #fff;
-        padding: 1rem;
+        padding: 0.5rem;
         text-align: center;
-    }
-
-    .footer p {
-        margin-bottom: 0;
     }
 
     /* Footer Ends */
@@ -109,6 +162,15 @@
     /* Audio Page Starts */
 
     /* Main Starts */
+
+    .audio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 10px;
+    }
 
     .audio-container p {
         margin-bottom: 1rem;
@@ -120,7 +182,8 @@
         border: none;
         outline: none;
         width: 100%;
-        max-width: 400px;
+        max-width: 100%;
+        margin-bottom: 10px;
     }
 
     audio:focus {
@@ -211,18 +274,20 @@
     /* Main Starts */
 
     .video-section {
-        margin: 20px 0;
+        margin: 10px 0;
         position: relative;
+        padding: 10px;
     }
 
     .video-heading {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 1.5rem;
         margin: 10px 0;
     }
 
     video {
         max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
     }
 
     .video-captions,
