@@ -6,7 +6,7 @@
 
     .header {
         background-color: #fff;
-        padding: 1rem;
+        padding: 20px;
         border-bottom: 2px solid #ccc;
     }
 
@@ -28,9 +28,26 @@
         text-transform: uppercase;
     }
 
-    .main-navigation a:hover,
-    .main-navigation a:focus {
-        background-color: #eee;
+    .menu-links ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+
+    .menu-links li {
+        margin: 0 15px;
+    }
+
+    .menu-links a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .menu-links a:hover,
+    .menu-links a:focus {
+        color: #ccc;
     }
 
     /* Header Ends */
@@ -45,18 +62,18 @@
     }
 
     .hero-heading {
-        font-size: 2em;
+        font-size: 2.5rem;
         margin-bottom: 1.5rem;
     }
 
     .hero-section p {
-        font-size: 1.2em;
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
     .cta-button {
-        background-color: #fff;
-        color: #0077c0;
+        background-color: #004F89;
+        color: #fff;
         padding: 1.5rem 3rem;
         font-size: 1.2rem;
         border-radius: 0.5rem;
@@ -65,7 +82,7 @@
 
     .cta-button:hover,
     .cta-button:focus {
-        background-color: #004F89;
+        background-color: #0077c0;
     }
 
     .services-section {
@@ -75,7 +92,7 @@
     }
 
     .services-section h2 {
-        font-size: 1.5em;
+        font-size: 2rem;
         text-align: center;
         margin: 20px 0;
     }
@@ -83,9 +100,7 @@
     .service-1,
     .service-2,
     .service-3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-basis: calc(33.33% - 20px);
         margin-bottom: 2rem;
         border: 1px solid #ccc;
         border-radius: 0.5rem;
@@ -104,7 +119,7 @@
     .service-1 h3,
     .service-2 h3,
     .service-3 h3 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -112,16 +127,18 @@
     .service-1 p,
     .service-2 p,
     .service-3 p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin-bottom: 1.5rem;
     }
 
     .service-link {
         padding: 1.5rem 3rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         background-color: #0077c0;
         color: #fff;
         border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
+        display: inline-block;
     }
 
     .service-link:hover,
@@ -152,8 +169,8 @@
         padding: 2rem;
     }
 
-    .audio-container p {
-        font-size: 1.2rem;
+    .audio-container h3 {
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
@@ -168,7 +185,7 @@
     }
 
     audio:focus {
-        box-shadow: 0 0 0 2px blue;
+        box-shadow: 0 0 0 2px #0077c0;
     }
 
     audio::-webkit-media-controls-start-playback-button {
@@ -176,13 +193,13 @@
     }
 
     track[kind=captions] {
-        font-size: 1.2rem;
-        color: gray;
+        font-size: 1.5rem;
+        color: #444;
     }
 
     track[kind=description] {
-        font-size: 1.2rem;
-        color: gray;
+        font-size: 1.5rem;
+        color: #444;
         display: none;
     }
 
@@ -202,14 +219,12 @@
 
     audio::-webkit-media-controls-current-time-display,
     audio::-webkit-media-controls-time-remaining-display {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     audio::-webkit-media-controls-play-button {
         background-color: #444;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
         margin-right: 15px;
     }
 
@@ -251,7 +266,7 @@
     }
 
     .video-heading {
-        font-size: 1.5em;
+        font-size: 2rem;
         margin: 20px 0;
     }
 

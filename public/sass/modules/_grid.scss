@@ -96,7 +96,6 @@
 
     .audio-container a {
         grid-column: 2;
-        margin: -5rem 0 0 0;
     }
 
     .video-heading {
@@ -162,13 +161,14 @@
     .services-section h2 {
         grid-column: 1 / span 3;
     }
+
     .audio-container p {
         grid-column: 1 / span 1;
     }
 
     .audio-container audio,
     .audio-container a {
-        grid-column: 2;
+        grid-column: 2 / span 2;
     }
 
     audio::-webkit-media-controls-enclosure {

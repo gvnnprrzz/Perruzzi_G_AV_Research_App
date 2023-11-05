@@ -1,12 +1,11 @@
-/* Homepage Starts */
+/* Homepage Styles for Mobile Screens */
 
 @media screen and (max-width: 767px) {
 
-    /* Header Starts */
-
+    /* Header Styles */
     .header {
         background-color: #fff;
-        padding: 0.5rem;
+        padding: 10px;
         border-bottom: 1px solid #ccc;
     }
 
@@ -22,14 +21,14 @@
     .menu {
         display: flex;
         flex-direction: column;
-        width: 22px;
-        height: 21px;
+        width: 30px;
+        height: 30px;
     }
 
     .line {
         background-color: #000;
-        height: 2px;
-        margin: 3px 0;
+        height: 3px;
+        margin: 4px 0;
         transition: transform 0.3s ease;
     }
 
@@ -52,11 +51,12 @@
     .menu-links {
         background-color: #fff;
         position: absolute;
-        top: 0;
+        top: 50px;
         right: 0;
         display: none;
         width: 100%;
         text-align: center;
+        z-index: 1;
     }
 
     ul li {
@@ -65,9 +65,7 @@
         text-transform: uppercase;
     }
 
-    /* Header Ends */
-
-    /* Main Starts */
+    /* Main Styles */
 
     .hero-section {
         padding: 1rem;
@@ -98,41 +96,37 @@
     }
 
     .services-section h2 {
-        display: flex;
-        justify-content: center;
         font-size: 1.25rem;
         margin-bottom: 1rem;
+        text-align: center;
     }
 
-    .service-1,
-    .service-2,
+    .service-1, 
+    .service-2, 
     .service-3 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
         border: 1px solid #ccc;
-        border-radius: 0.5rem;
+        border-radius: .5rem;
         padding: 2rem;
+        text-align: center;
     }
 
     .services-section img {
         max-width: 100%;
+        height: auto;
     }
 
-    .service-1 h3,
-    .service-2 h3,
-    .service-3 h3 {
+    .services-section h3 {
         font-size: 1.25rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
         text-align: center;
-
     }
 
-    .service-1 p,
-    .service-2 p,
-    .service-3 p {
+    .services-section p {
         text-align: center;
         margin-bottom: 1rem;
     }
@@ -144,10 +138,7 @@
         border-radius: 0.25rem;
     }
 
-    /* Main Ends */
-
-    /* Footer Starts */
-
+    /* Footer Styles */
     .footer {
         background-color: #0077c0;
         color: #fff;
@@ -155,14 +146,11 @@
         text-align: center;
     }
 
-    /* Footer Ends */
+    /* End of Homepage Styles */
 
-    /* Homepage Ends */
+    /* Audio Page Styles */
 
-    /* Audio Page Starts */
-
-    /* Main Starts */
-
+    /* Main Styles */
     .audio-container {
         display: flex;
         flex-direction: column;
@@ -190,25 +178,17 @@
         box-shadow: 0 0 0 2px blue;
     }
 
-    audio::-webkit-media-controls-start-playback-button {
-        display: none;
-    }
-
-    track[kind=captions] {
+    track[kind=captions],
+    track[kind=description] {
         font-size: 14px;
         color: gray;
     }
 
     track[kind=description] {
-        font-size: 14px;
-        color: gray;
         display: none;
     }
 
-    button.transcript:focus + track[kind=description][label=Transcript] {
-        display: block;
-    }
-
+    button.transcript:focus + track[kind=description][label=Transcript],
     button.audio-description:focus + track[kind=description][label="Audio Description"] {
         display: block;
     }
@@ -231,12 +211,6 @@
         width: 30px;
         height: 30px;
         margin-right: 10px;
-        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23fff" d="M3.049 21.012a.75.75 0 0 1-.75-.75V3.738c0-.378.287-.687.65-.733l16.5-1.5c.288-.026.55.166.576.454l.816 9.033c.026.288-.166.55-.454.576l-15.684 1.427v14.066c0 .413-.337.75-.75.75z"/></svg>');
-        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23fff" d="M3.049 21.012a.75.75 0 0 1-.75-.75V3.738c0-.378.287-.687.65-.733l16.5-1.5c.288-.026.55.166.576.454l.816 9.033c.026.288-.166.55-.454.576l-15.684 1.427v14.066c0 .413-.337.75-.75.75z"/></svg>');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        border: none;
     }
 
     audio::-webkit-media-controls-volume-slider {
@@ -244,35 +218,15 @@
     }
 
     audio::-webkit-media-controls-mute-button {
-        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23 fff" d=" M6 8H4v8h2l4 4V4L6 8z"/><path d=" M0 0h24v24H0z" fill=" none"/></svg>');
-        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23fff" d="M6 8H4v8h2l4 4V4L6 8z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        border: none;
-        background-color: transparent;
         width: 30px;
         height: 30px;
     }
 
-    audio::-webkit-media-controls-timeline {
-        margin-top: 10px;
-        width: 100%;
-    }
+    /* End of Audio Page Styles */
 
-    audio::-webkit-media-controls-timeline-container:focus-within audio::-webkit-media-controls-play-button,
-    audio::-webkit-media-controls-timeline-container:focus-within audio::-webkit-media-controls-mute-button {
-        outline: none;
-    }
+    /* Video Page Styles */
 
-    /* Main Ends */
-
-    /* Audio Page Ends */
-
-    /* Video Page Starts */
-
-    /* Main Starts */
-
+    /* Main Styles */
     .video-section {
         margin: 10px 0;
         position: relative;
@@ -301,7 +255,5 @@
         margin-top: 10px;
     }
 
-    /* Main Ends */
-
-    /* Video Page Ends */
+    /* End of Video Page Styles */
 }
