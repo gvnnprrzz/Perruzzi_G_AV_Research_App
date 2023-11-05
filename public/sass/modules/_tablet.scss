@@ -6,16 +6,15 @@
 
     .header {
         background-color: #fff;
-        padding: 1rem;
+        padding: 15px;
         border-bottom: 2px solid #ccc;
     }
 
     .logo img {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .main-navigation {
-        position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -53,11 +52,12 @@
 
     .menu-links {
         position: absolute;
-        top: -24px;
-        left: 10px;
+        top: 60px;
+        left: 485px;
         background-color: #fff;
         display: none;
-        width: 108%;
+        width: 35%;
+        z-index: 1;
     }
 
     ul li {
@@ -79,17 +79,17 @@
 
     .hero-heading {
         font-size: 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .hero-section p {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .cta-button {
         background-color: #fff;
         color: #0077c0;
-        padding: 1rem 2rem;
+        padding: 1.5rem 2.5rem;
         border-radius: 0.5rem;
     }
 
@@ -102,7 +102,7 @@
     .services-section h2 {
         font-size: 1.5rem;
         text-align: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .services-section img {
@@ -122,11 +122,11 @@
     .service-1 p,
     .service-2 p,
     .service-3 p {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .service-link {
-        padding: 1rem 2rem;
+        padding: 1.5rem 2.5rem;
         background-color: #0077c0;
         color: #fff;
         border-radius: 0.5rem;
@@ -139,7 +139,7 @@
     .footer {
         background-color: #0077c0;
         color: #fff;
-        padding: 1rem;
+        padding: 1.5rem;
         text-align: center;
     }
 
